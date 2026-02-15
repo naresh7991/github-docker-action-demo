@@ -1,0 +1,14 @@
+name: demo docker action
+description: A simple github docker action
+author: "Naresh"
+inputs:
+  message:
+    description: "will print username"
+    required: true
+    default: username
+outputs:
+  time:
+    description: "The current Time"
+runs:
+  using: docker
+  image: Dockerfile
